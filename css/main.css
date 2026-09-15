@@ -231,3 +231,209 @@ body {
         gap: 10px;
     }
 }
+
+/* =========================================
+   HOME PAGE
+========================================= */
+/* HERO */
+.hero {
+    padding: 30px 0 90px;
+}
+
+.hero-label {
+    margin-bottom: 25px;
+    color: #72ffff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+}
+
+.hero h1 {
+    margin: 0 0 25px;
+    color: #e9edfb;
+    font-family: "Orbitron", sans-serif;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+}
+
+.hero-description {
+    max-width: 900px;
+    margin-bottom: 25px;
+    color: #c0caf1;
+    line-height: 1.8;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 30px;
+}
+
+.hero-actions a {
+    color: #4CC9F0;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+
+.hero-actions a:hover {
+    color: #72ffff;
+}
+
+
+/* MISSION STATUS */
+.mission-status {
+    margin-bottom: 80px;
+}
+
+.status-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.status-card {
+    padding: 25px;
+    border: 1px solid #303650;
+    background: #171B2A;
+}
+
+.status-label {
+    display: block;
+    margin-bottom: 15px;
+    color: #72ffff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+}
+
+.status-card h3 {
+    margin: 0 0 12px;
+    color: #e9edfb;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.9rem;
+}
+
+.status-card p {
+    margin: 0;
+    color: #c0caf1;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* FEATURED PROJECT */
+.featured-project {
+    margin-bottom: 80px;
+}
+
+.project-panel {
+    padding: 35px;
+    border: 1px solid #303650;
+    background: #171B2A;
+}
+
+.project-meta {
+    margin-bottom: 15px;
+    color: #C47CB0;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+}
+
+.project-panel h2 {
+    margin: 0 0 20px;
+    color: #e9edfb;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.4rem;
+}
+
+.project-panel p {
+    max-width: 750px;
+    color: #c0caf1;
+    line-height: 1.8;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.project-tags span {
+    padding: 7px 10px;
+    border: 1px solid #303650;
+    color: #9DB0FC;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+}
+
+.project-panel > a {
+    color: #4CC9F0;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+
+.project-panel > a:hover {
+    color: #72ffff;
+}
+
+
+/* ENGINEERING FOCUS */
+.engineering-focus {
+    margin-bottom: 80px;
+}
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.focus-card {
+    padding: 25px;
+    border: 1px solid #303650;
+    background: #171B2A;
+}
+
+.focus-code {
+    color: #4e5d99;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.65rem;
+}
+
+.focus-card h3 {
+    margin: 15px 0;
+    color: #e9edfb;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.9rem;
+}
+
+.focus-card p {
+    margin: 0;
+    color: #c0caf1;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .status-grid,
+    .focus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .project-panel {
+        padding: 25px;
+    }
+}
