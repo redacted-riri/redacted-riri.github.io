@@ -1,179 +1,368 @@
 <!DOCTYPE html>
-<html>
-<head>
-	
-	<title>Sariah Echols</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" href="/images/favicon.png">
-	
-	<style>
-	
-	body{
-		margin: auto;
-		background-color: #29583c;
-		font-family: Helvetica, sans-serif;
-	}
-	
-	p{
-		font-size:20px;
-		color: #ccc;
-	}
-	
-	h1{
-		color: #ddd;
-	}
-	
-	li{
-		color: #ccc;
-	}
-	
-	ul.p{
-		font-size:20px;
-		color: #ccc;
-	}
-	
-	a{
-		color: #00bfff;
-	}
-	a:visited{
-		color: #9932cc;
-	}
-	
-	.normal-content{
-		max-width: 1000px;
-		margin: auto;
-		padding-right: 50px;
-		padding-left: 50px;
-	}
-	
-	.centered-content{
-		max-width: 1000px;
-		margin: auto;
-		padding-right: 50px;
-		padding-left: 50px;
-		text-align: center;
-	}
+<html lang="en">
 
-	ul.nav {
-		padding-left: 0px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		color: #bbb;
-		background-color: #000;
-		text-align: center;
-		position: relative;
-		bottom: 16px;
-	}
-	
-	ul.nav li{
-		display: inline-block;
-		padding: 10px 20px;
-		font-size: 24px;
-		text-decoration: none;
-		color: #bbb;
-	}
-	
-	.top-bar-link a{
-		color: #bbb;
-		font-size: 24px;
-		text-decoration: none;
-		font-family: Courier, sans-serif;
-	}
-	
-	.top-bar-link a:hover{
-		color: #ddd;
-	}
-	
-	.top-bar-title a{
-		color: #f2f2f2;
-		font-size: 40px;
-		text-decoration: none;
-		font-family: Courier, sans-serif;
-	}
-	
-	.top-bar-title a:hover{
-		color: #fff;
-	}
-	
-	.footer{ 
-		padding-top: 50px;
-		text-align: center;
-    }
-   
-	</style>
-	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>// Sariah Echols //</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navigation.css">
 </head>
 
 <body>
-	<!-- ================================
+
+    <!-- =========================================
          SITE HEADER
-         ================================ -->
+    ========================================== -->
     <header class="site-header">
         <div class="system-bar">
-            <div class="system-name">
-                RIRI // ENGINEERING PORTFOLIO
-            </div>
+            <span class="system-name">
+                // Sariah Echols //
+            </span>
 
-            <div class="system-status">
+            <span class="system-status">
                 ● SYSTEM ONLINE
-            </div>
+            </span>
         </div>
 
         <nav class="main-nav">
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="projects.html">PROJECTS</a>
-            <a href="resume.html">RESUME</a>
-            <a href="interests.html">INTERESTS</a>
-            <a href="contact.html" class="active">CONTACT</a>
+            <a href="index.html" class="active">
+                HOME
+            </a>
+
+            <a href="about.html">
+                ABOUT
+            </a>
+
+            <a href="projects.html">
+                PROJECTS
+            </a>
+
+            <a href="resume.html">
+                RESUME
+            </a>
+
+            <a href="interests.html">
+                INTERESTS
+            </a>
+
+            <a href="contact.html">
+                CONTACT
+            </a>
         </nav>
     </header>
 
-<ul class="nav">
-	<li>
-		<div class="top-bar-title">
-			<a href="./index.html">Sariah Echols</a>
-		</div>
-	</li>
-	<li style="transform: translateY(-8%);">
-		<div class="top-bar-link">
-			<a href="./projects.html" style="text-decoration: none;">Projects</a>
-		</div>
-	</li>
-	<li style="transform: translateY(-8%);">
-		<div class="top-bar-link">
-			<a href="./index.html" style="text-decoration: none;">Coming Soon</a>
-		</div>
-	</li>
-</ul>
 
-<div class="normal-content">
+    <main class="page-container">
 
-	<img src="images\" alt="" width="400px" style="border-radius:10%; transform:translateX(10px); float: right;"><br>
-	
-	<h1>About Me</h1>
-	<p>
-	
-	</p>
-	
-	<h1>Contact</h1>
-	<p>
-	The best way to reach me is via email at <a href="mailto:sariah.echols.18@gmail.com">sariah.echols.18@gmail.com</a>.
-	Feel free to reach out about any of my projects, or if you run into any issues on this site.
-	</p>
-	<p>
-	I aim to answer all other questions on that timeframe as well, but non-urgent emails may have a longer response time.
-	</p>
-	<p>
-	</p>
-	
-	<div class="footer">
-		<p>
-			<a href="mailto:sariah.echols.18@gmail.com">Email</a> - <a href="https://github.com/redacted-riri">GitHub</a> - <a href="https://www.linkedin.com/in/sariah-echols/">LinkedIn</a>
-		</p>
-	</div>
-	
-</div>
+        <!-- =====================================
+             MISSION INTRODUCTION
+        ====================================== -->
+        <section class="hero">
+            <div class="hero-label">
+                ENGINEERING OPERATIONS // 001
+            </div>
+
+            <h1>
+                BUILDING SYSTEMS<br>
+                FOR THE NEXT FRONTIER.
+            </h1>
+
+            <p class="hero-description">
+                Electrical and Computer Engineer focused on robotics,
+                embedded systems, autonomous platforms, and the systems
+                that connect them.
+            </p>
+
+            <div class="hero-actions">
+                <a href="projects.html">
+                    VIEW PROJECTS →
+                </a>
+
+                <a href="resume.html">
+                    ACCESS RESUME →
+                </a>
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             MISSION STATUS
+        ====================================== -->
+        <section class="mission-status">
+            <div class="section-heading">
+                <span class="section-number">
+                    01
+                </span>
+
+                <h2>
+                    MISSION STATUS
+                </h2>
+            </div>
+
+
+            <div class="status-grid">
+                <div class="status-card">
+                    <span class="status-label">
+                        CURRENT ROLE
+                    </span>
+
+                    <h3>
+                        SYSTEMS / ENGINEERING
+                    </h3>
+
+                    <p>
+                        Defense and aerospace engineering
+                        environment.
+                    </p>
+                </div>
+
+
+                <div class="status-card">
+                    <span class="status-label">
+                        PRIMARY DOMAIN
+                    </span>
+
+                    <h3>
+                        ROBOTICS + EMBEDDED
+                    </h3>
+
+                    <p>
+                        Hardware, software, communications,
+                        and system integration.
+                    </p>
+                </div>
+
+
+                <div class="status-card">
+                    <span class="status-label">
+                        OPERATING ENVIRONMENT
+                    </span>
+
+                    <h3>
+                        EARTH → SPACE
+                    </h3>
+
+                    <p>
+                        Interested in increasingly complex
+                        autonomous and space systems.
+                    </p>
+                </div>
+
+
+                <div class="status-card">
+                    <span class="status-label">
+                        CURRENT OBJECTIVE
+                    </span>
+
+                    <h3>
+                        SYSTEMS ENGINEERING
+                    </h3>
+
+                    <p>
+                        Designing and integrating systems
+                        that have to work as a whole.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             FEATURED MISSION
+        ====================================== -->
+        <section class="featured-project">
+            <div class="section-heading">
+                <span class="section-number">
+                    02
+                </span>
+
+                <h2>
+                    FEATURED MISSION
+                </h2>
+            </div>
+
+
+            <div class="project-panel">
+                <div class="project-meta">
+                    MISSION // BUCKEYE LUNABOTICS
+                </div>
+
+                <h2>
+                    AUTONOMOUS LUNAR ROVER
+                </h2>
+
+                <p>
+                    A multidisciplinary robotics platform combining
+                    embedded computing, motor control, wireless
+                    communications, sensing, and autonomous operation.
+                </p>
+
+
+                <div class="project-tags">
+                    <span>
+                        ROBOTICS
+                    </span>
+
+                    <span>
+                        EMBEDDED
+                    </span>
+
+                    <span>
+                        COMMUNICATIONS
+                    </span>
+
+                    <span>
+                        SYSTEMS
+                    </span>
+                </div>
+
+
+                <a href="projects/lunabotics.html">
+                    OPEN MISSION FILE →
+                </a>
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             ENGINEERING FOCUS
+        ====================================== -->
+        <section class="engineering-focus">
+            <div class="section-heading">
+                <span class="section-number">
+                    03
+                </span>
+
+                <h2>
+                    ENGINEERING FOCUS
+                </h2>
+            </div>
+
+
+            <div class="focus-grid">
+                <article class="focus-card">
+                    <span class="focus-code">
+                        SYS-01
+                    </span>
+
+                    <h3>
+                        SYSTEMS ENGINEERING
+                    </h3>
+
+                    <p>
+                        Architecture, integration, interfaces,
+                        requirements, and system-level problem solving.
+                    </p>
+                </article>
+
+
+                <article class="focus-card">
+                    <span class="focus-code">
+                        EMB-02
+                    </span>
+
+                    <h3>
+                        EMBEDDED SYSTEMS
+                    </h3>
+
+                    <p>
+                        Microcontrollers, embedded Linux,
+                        hardware/software integration, and control.
+                    </p>
+                </article>
+
+
+                <article class="focus-card">
+                    <span class="focus-code">
+                        ROB-03
+                    </span>
+
+                    <h3>
+                        ROBOTICS
+                    </h3>
+
+                    <p>
+                        Autonomous platforms, sensors, motor control,
+                        navigation, and robotic mechanisms.
+                    </p>
+                </article>
+
+
+                <article class="focus-card">
+                    <span class="focus-code">
+                        SPC-04
+                    </span>
+
+                    <h3>
+                        SPACE SYSTEMS
+                    </h3>
+
+                    <p>
+                        Long-term interest in spacecraft, satellites,
+                        autonomous exploration, and extraterrestrial
+                        robotics.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             TRANSMISSION
+        ====================================== -->
+        <section class="transmission-panel">
+            <div class="transmission-header">
+                <span>
+                    TRANSMISSION // 004
+                </span>
+
+                <span>
+                    OPEN CHANNEL
+                </span>
+            </div>
+
+
+            <p>
+                Interested in the engineering behind complex systems?
+                Explore the project files, review the technical background,
+                or establish contact.
+            </p>
+
+
+            <p class="transmission-footer">
+                UPLINK AVAILABLE →
+            </p>
+        </section>
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+    <footer class="system-footer page-container">
+        <span>
+            SYSTEM: RIRI-ENG
+        </span>
+
+        <span>
+            STATUS: OPERATIONAL
+        </span>
+
+        <span>
+            © 2026
+        </span>
+    </footer>
+
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>
