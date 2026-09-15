@@ -1,0 +1,261 @@
+/* GLOBAL */
+.page-container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.page-header {
+    margin-bottom: 70px;
+    border-left: 2px solid #58C4C4;
+    padding-left: 25px;
+}
+
+.system-label {
+    margin: 0 0 12px;
+
+    color: #58C4C4;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+}
+
+.page-header h1 {
+    margin: 0;
+
+    color: #E6E8E6;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: 0.08em;
+}
+
+.page-description {
+    max-width: 650px;
+
+    color: #82909C;
+
+    line-height: 1.8;
+}
+
+/* SECTION HEADINGS */
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+    border-bottom: 1px solid #263744;
+    padding-bottom: 12px;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    color: #E6E8E6;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+}
+
+.section-number {
+    color: #58C4C4;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.75rem;
+}
+
+
+/* RESUME */
+.resume-section,
+.contact-section {
+    margin-bottom: 70px;
+}
+
+.resume-entry {
+    margin-bottom: 45px;
+    padding: 25px;
+
+    border: 1px solid #263744;
+    background: #101923;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.entry-header h3 {
+    margin: 0;
+
+    color: #E6E8E6;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.95rem;
+}
+
+.entry-date {
+    color: #58C4C4;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.7rem;
+    white-space: nowrap;
+}
+
+.entry-organization {
+    color: #E6B85C;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+}
+
+.entry-details {
+    color: #82909C;
+    font-size: 0.9rem;
+}
+
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-group {
+    padding: 25px;
+
+    border: 1px solid #263744;
+    background: #101923;
+}
+
+.skill-group h3 {
+    margin-top: 0;
+
+    color: #58C4C4;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+}
+
+
+/* CONTACT */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    display: block;
+
+    padding: 30px;
+
+    border: 1px solid #263744;
+    background: #101923;
+
+    color: inherit;
+    text-decoration: none;
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.contact-card:hover {
+    border-color: #58C4C4;
+    background: #16232E;
+    transform: translateY(-3px);
+}
+
+.contact-code {
+    color: #82909C;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.65rem;
+}
+
+.contact-card h3 {
+    color: #E6E8E6;
+
+    font-family: "Orbitron", sans-serif;
+}
+
+.contact-status {
+    color: #58C4C4;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.65rem;
+}
+
+/* TRANSMISSION */
+.transmission-panel {
+    margin-bottom: 70px;
+
+    border: 1px solid #263744;
+    background: #101923;
+}
+
+.transmission-header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 12px 20px;
+
+    border-bottom: 1px solid #263744;
+
+    color: #58C4C4;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.7rem;
+}
+
+.transmission-panel p {
+    padding: 0 20px;
+    line-height: 1.7;
+}
+
+.transmission-footer {
+    color: #E6B85C;
+}
+
+/* FOOTER */
+.system-footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #263744;
+
+    color: #82909C;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    .entry-header {
+        flex-direction: column;
+    }
+
+    .skills-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .system-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
