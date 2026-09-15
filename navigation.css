@@ -1,0 +1,110 @@
+.site-header {
+    width: 100%;
+    border-bottom: 1px solid #263744;
+    background: #080D14;
+}
+
+/* Top identity/status bar */
+
+.system-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 5vw;
+
+    border-bottom: 1px solid #16232E;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+}
+
+.system-name {
+    color: #E6E8E6;
+}
+
+.system-status {
+    color: #58C4C4;
+}
+
+/* Main navigation */
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0;
+
+    padding: 0 5vw;
+}
+
+.main-nav a {
+    position: relative;
+
+    padding: 18px 24px;
+
+    color: #82909C;
+    text-decoration: none;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+.main-nav a::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 1px;
+    height: 100%;
+
+    background: #263744;
+}
+
+.main-nav a:last-child::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 1px;
+    height: 100%;
+
+    background: #263744;
+}
+
+.main-nav a:hover {
+    color: #E6E8E6;
+    background: #101923;
+}
+
+/* Active page */
+
+.main-nav a.active {
+    color: #58C4C4;
+}
+
+.main-nav a.active::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    right: 20%;
+
+    height: 2px;
+
+    background: #58C4C4;
+
+    box-shadow: 0 0 8px rgba(88, 196, 196, 0.5);
+}
